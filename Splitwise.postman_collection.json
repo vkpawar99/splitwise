@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "9b354cd9-57cc-4b8e-9929-742c37fc31a1",
+		"name": "Splitwise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27764187"
+	},
+	"item": [
+		{
+			"name": "Add_User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6Inlhc2h1LnNhaHUiLCJuYW1lIjoiWWFzaHUgU2FodSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82ZDFmNGMxMDhhZTI3ZDI2MTRmNDU1N2I2YmU1ZDc2OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRnlzLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTEwVDEzOjQ1OjU5Ljg2OFoiLCJlbWFpbCI6Inlhc2h1LnNhaHVAYXN0ZXJpYS5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2luc2lnaHQxLmF1dGgwLmNvbS8iLCJhdWQiOiI1SWZ4OEcxZkNJMEh1eU1FMTFoY0t3ejdLeVpOckJsVSIsImlhdCI6MTY5NDQ4NzE5NSwiZXhwIjoxNjk0NTIzMTk1LCJzdWIiOiJhdXRoMHw2NDc4MjgwYTU3MTBjYmRhMzRmMjVlM2MiLCJzaWQiOiJfd29GdFNsVG53NGxtRlRmYXp1VGo5NzI5WUYzTTlPVyJ9.S5IPEOu2-C7zFUqGLHPoL5Scn10jPZexJ9HNPWfd4nLgJNmV_J8HTiXRwIJViT9VY58kmDVpCPr1EDugOZpQu4lCtWTSNSsTNU2dhIT2-NFE0bSM2DpqWH_AmnV7OJ0xW6lsRKgkyfE111h83NyaZUd5xtPr8Iba4cH5ZT1zsWnmGBjTo1kdx2uIx6viJa0g_aIIznAjAAnrWEyS1ABdNdzxlZBL-wqCDXhFsPSTlRGxuvR9d2am6_ATXuxgPlFqwk-QPET7_tsAydaahby5rL7tV_XiZEBIribqsBgL-k0Kb5QbBh4dB0LxJx415rWq4l8KlY7LhY2n2hdw7CTWig"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "https://skydeck-staging.asteria.co.in/ui/site-management/39fa3138-f921-4f57-9d8e-3a3af2561c3e/site/e28d6f07-8cdb-4b41-b306-c493e348b569/survey/35b8ad17-55d0-45a4-b15d-93b6956b6907/2dstitching"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6InNyaXZhdHNhLnMiLCJuYW1lIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzFjYWQyNWI4NmEzYzI4ZjA0Yzg5ZjEzZTAyMzA1YzEyP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGc3IucG5nIiwidXBkYXRlZF9hdCI6IjIwMjMtMDktMDRUMTE6MDM6MTMuOTQ0WiIsImVtYWlsIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vaW5zaWdodDEuYXV0aDAuY29tLyIsImF1ZCI6IjVJZng4RzFmQ0kwSHV5TUUxMWhjS3d6N0t5Wk5yQmxVIiwiaWF0IjoxNjk0MTcxMzE1LCJleHAiOjE2OTQyMDczMTUsInN1YiI6ImF1dGgwfDYzNjhiY2Q1NzlhYzFkMzhmYzM2OGVmOCIsInNpZCI6ImtUWWtHSXZvNGVfUXJLdWRzZEZxZ1h3eXllNC15VDFyIn0.iXM39uz3ToqMAT75jrjRscbC2iOM6pd-oFRmgcp7ou9Dsv5SyyviEkwa-5CkDSS_2RXgRnH5awMY8413BoWb6Kb1cTd_LEL0OzOBEi7J6f_9qcJUCuiXhYD_ooiBC48Bl1tV5absAoxP4SfklyE8wfI73njGlzFYZLsMj1borwTts9-duBTyiX790YmQ1P2pZB-Rj4n7H1P2nIm3-vZhtMjnedIAqeCIakLncx2ZrkFgejmBL_M6ds1cbH8MpTYA19mcyBpltweGoKrYuOIOMiys8KHDG27WYXbOBfc-y24bEc7zu4yoKcy9oIVEdxiwAXOJWO8tujHpGyFqlTjSTw",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_08BW5CB1LR=GS1.1.1678353821.1.1.1678353862.0.0.0; _ga=GA1.3.110356187.1678353821; _clck=n2udn3|1|f9r|0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "x-claim-sub",
+						"value": "{{super_user_xclaim_sub}}",
+						"type": "text"
+					},
+					{
+						"key": "x-claim-email",
+						"value": "{{super_user_xclaim_email}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"u4\",\n    \"mobile\": \"1111111114\",\n    \"email\": \"u4@gmail.com\"\n}\n\n// {\n//     \"name\": \"vikrant\",\n//     \"mobile\": \"1111111111\",\n//     \"email\": \"vpawar@gmail.com\"\n// }"
+				},
+				"url": "http://127.0.0.1:8000/user",
+				"description": "gis-ortho image list"
+			},
+			"response": []
+		},
+		{
+			"name": "Add_Expense",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6Inlhc2h1LnNhaHUiLCJuYW1lIjoiWWFzaHUgU2FodSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82ZDFmNGMxMDhhZTI3ZDI2MTRmNDU1N2I2YmU1ZDc2OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRnlzLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTEwVDEzOjQ1OjU5Ljg2OFoiLCJlbWFpbCI6Inlhc2h1LnNhaHVAYXN0ZXJpYS5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2luc2lnaHQxLmF1dGgwLmNvbS8iLCJhdWQiOiI1SWZ4OEcxZkNJMEh1eU1FMTFoY0t3ejdLeVpOckJsVSIsImlhdCI6MTY5NDQ4NzE5NSwiZXhwIjoxNjk0NTIzMTk1LCJzdWIiOiJhdXRoMHw2NDc4MjgwYTU3MTBjYmRhMzRmMjVlM2MiLCJzaWQiOiJfd29GdFNsVG53NGxtRlRmYXp1VGo5NzI5WUYzTTlPVyJ9.S5IPEOu2-C7zFUqGLHPoL5Scn10jPZexJ9HNPWfd4nLgJNmV_J8HTiXRwIJViT9VY58kmDVpCPr1EDugOZpQu4lCtWTSNSsTNU2dhIT2-NFE0bSM2DpqWH_AmnV7OJ0xW6lsRKgkyfE111h83NyaZUd5xtPr8Iba4cH5ZT1zsWnmGBjTo1kdx2uIx6viJa0g_aIIznAjAAnrWEyS1ABdNdzxlZBL-wqCDXhFsPSTlRGxuvR9d2am6_ATXuxgPlFqwk-QPET7_tsAydaahby5rL7tV_XiZEBIribqsBgL-k0Kb5QbBh4dB0LxJx415rWq4l8KlY7LhY2n2hdw7CTWig"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "https://skydeck-staging.asteria.co.in/ui/site-management/39fa3138-f921-4f57-9d8e-3a3af2561c3e/site/e28d6f07-8cdb-4b41-b306-c493e348b569/survey/35b8ad17-55d0-45a4-b15d-93b6956b6907/2dstitching"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6InNyaXZhdHNhLnMiLCJuYW1lIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzFjYWQyNWI4NmEzYzI4ZjA0Yzg5ZjEzZTAyMzA1YzEyP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGc3IucG5nIiwidXBkYXRlZF9hdCI6IjIwMjMtMDktMDRUMTE6MDM6MTMuOTQ0WiIsImVtYWlsIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vaW5zaWdodDEuYXV0aDAuY29tLyIsImF1ZCI6IjVJZng4RzFmQ0kwSHV5TUUxMWhjS3d6N0t5Wk5yQmxVIiwiaWF0IjoxNjk0MTcxMzE1LCJleHAiOjE2OTQyMDczMTUsInN1YiI6ImF1dGgwfDYzNjhiY2Q1NzlhYzFkMzhmYzM2OGVmOCIsInNpZCI6ImtUWWtHSXZvNGVfUXJLdWRzZEZxZ1h3eXllNC15VDFyIn0.iXM39uz3ToqMAT75jrjRscbC2iOM6pd-oFRmgcp7ou9Dsv5SyyviEkwa-5CkDSS_2RXgRnH5awMY8413BoWb6Kb1cTd_LEL0OzOBEi7J6f_9qcJUCuiXhYD_ooiBC48Bl1tV5absAoxP4SfklyE8wfI73njGlzFYZLsMj1borwTts9-duBTyiX790YmQ1P2pZB-Rj4n7H1P2nIm3-vZhtMjnedIAqeCIakLncx2ZrkFgejmBL_M6ds1cbH8MpTYA19mcyBpltweGoKrYuOIOMiys8KHDG27WYXbOBfc-y24bEc7zu4yoKcy9oIVEdxiwAXOJWO8tujHpGyFqlTjSTw",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_08BW5CB1LR=GS1.1.1678353821.1.1.1678353862.0.0.0; _ga=GA1.3.110356187.1678353821; _clck=n2udn3|1|f9r|0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "x-claim-sub",
+						"value": "{{super_user_xclaim_sub}}",
+						"type": "text"
+					},
+					{
+						"key": "x-claim-email",
+						"value": "{{super_user_xclaim_email}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// Example 1\n// {\n//     \"payer_id\": \"u1@gmail.com\",\n//     \"participants\": {\"u1@gmail.com\":null,\"u2@gmail.com\":null,\"u3@gmail.com\":null,\"u4@gmail.com\":null},\n//     \"amount\": 1000,\n//     \"expense_type\": \"EXACT\",\n//     \"expense_name\": \"Electricity Bill\"\n\n// }\n\n\n// Example 2\n// {\n//     \"payer_id\": \"u1@gmail.com\",\n//     \"participants\": {\"u2@gmail.com\":370,\"u3@gmail.com\":880},\n//     \"amount\": 1250,\n//     \"expense_type\": \"EXACT\",\n//     \"expense_name\": \"Electricity Bill\"\n\n// }\n\n// EXAMPLE 3\n{\n    \"payer_id\": \"u4@gmail.com\",\n    \"participants\": {\"u1@gmail.com\":40,\"u2@gmail.com\":20,\"u3@gmail.com\":20,\"u4@gmail.com\":20},\n    \"amount\": 1200,\n    \"expense_type\": \"PERCENT\",\n    \"expense_name\": \"Electricity Bill\"\n\n}\n"
+				},
+				"url": "http://127.0.0.1:8000/add_expense",
+				"description": "gis-ortho image list"
+			},
+			"response": []
+		},
+		{
+			"name": "Show_records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6Inlhc2h1LnNhaHUiLCJuYW1lIjoiWWFzaHUgU2FodSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82ZDFmNGMxMDhhZTI3ZDI2MTRmNDU1N2I2YmU1ZDc2OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRnlzLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTEwVDEzOjQ1OjU5Ljg2OFoiLCJlbWFpbCI6Inlhc2h1LnNhaHVAYXN0ZXJpYS5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2luc2lnaHQxLmF1dGgwLmNvbS8iLCJhdWQiOiI1SWZ4OEcxZkNJMEh1eU1FMTFoY0t3ejdLeVpOckJsVSIsImlhdCI6MTY5NDQ4NzE5NSwiZXhwIjoxNjk0NTIzMTk1LCJzdWIiOiJhdXRoMHw2NDc4MjgwYTU3MTBjYmRhMzRmMjVlM2MiLCJzaWQiOiJfd29GdFNsVG53NGxtRlRmYXp1VGo5NzI5WUYzTTlPVyJ9.S5IPEOu2-C7zFUqGLHPoL5Scn10jPZexJ9HNPWfd4nLgJNmV_J8HTiXRwIJViT9VY58kmDVpCPr1EDugOZpQu4lCtWTSNSsTNU2dhIT2-NFE0bSM2DpqWH_AmnV7OJ0xW6lsRKgkyfE111h83NyaZUd5xtPr8Iba4cH5ZT1zsWnmGBjTo1kdx2uIx6viJa0g_aIIznAjAAnrWEyS1ABdNdzxlZBL-wqCDXhFsPSTlRGxuvR9d2am6_ATXuxgPlFqwk-QPET7_tsAydaahby5rL7tV_XiZEBIribqsBgL-k0Kb5QbBh4dB0LxJx415rWq4l8KlY7LhY2n2hdw7CTWig"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "https://skydeck-staging.asteria.co.in/ui/site-management/39fa3138-f921-4f57-9d8e-3a3af2561c3e/site/e28d6f07-8cdb-4b41-b306-c493e348b569/survey/35b8ad17-55d0-45a4-b15d-93b6956b6907/2dstitching"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6InNyaXZhdHNhLnMiLCJuYW1lIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzFjYWQyNWI4NmEzYzI4ZjA0Yzg5ZjEzZTAyMzA1YzEyP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGc3IucG5nIiwidXBkYXRlZF9hdCI6IjIwMjMtMDktMDRUMTE6MDM6MTMuOTQ0WiIsImVtYWlsIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vaW5zaWdodDEuYXV0aDAuY29tLyIsImF1ZCI6IjVJZng4RzFmQ0kwSHV5TUUxMWhjS3d6N0t5Wk5yQmxVIiwiaWF0IjoxNjk0MTcxMzE1LCJleHAiOjE2OTQyMDczMTUsInN1YiI6ImF1dGgwfDYzNjhiY2Q1NzlhYzFkMzhmYzM2OGVmOCIsInNpZCI6ImtUWWtHSXZvNGVfUXJLdWRzZEZxZ1h3eXllNC15VDFyIn0.iXM39uz3ToqMAT75jrjRscbC2iOM6pd-oFRmgcp7ou9Dsv5SyyviEkwa-5CkDSS_2RXgRnH5awMY8413BoWb6Kb1cTd_LEL0OzOBEi7J6f_9qcJUCuiXhYD_ooiBC48Bl1tV5absAoxP4SfklyE8wfI73njGlzFYZLsMj1borwTts9-duBTyiX790YmQ1P2pZB-Rj4n7H1P2nIm3-vZhtMjnedIAqeCIakLncx2ZrkFgejmBL_M6ds1cbH8MpTYA19mcyBpltweGoKrYuOIOMiys8KHDG27WYXbOBfc-y24bEc7zu4yoKcy9oIVEdxiwAXOJWO8tujHpGyFqlTjSTw",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_08BW5CB1LR=GS1.1.1678353821.1.1.1678353862.0.0.0; _ga=GA1.3.110356187.1678353821; _clck=n2udn3|1|f9r|0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "x-claim-sub",
+						"value": "{{super_user_xclaim_sub}}",
+						"type": "text"
+					},
+					{
+						"key": "x-claim-email",
+						"value": "{{super_user_xclaim_email}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"vikrnat\",\n    \"email\": \"vikrant1@example.com\",\n    \"mobile\": 76512348412\n}"
+				},
+				"url": "http://127.0.0.1:8000/show_records",
+				"description": "gis-ortho image list"
+			},
+			"response": []
+		},
+		{
+			"name": "Show_records_simplify",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6Inlhc2h1LnNhaHUiLCJuYW1lIjoiWWFzaHUgU2FodSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82ZDFmNGMxMDhhZTI3ZDI2MTRmNDU1N2I2YmU1ZDc2OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRnlzLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTEwVDEzOjQ1OjU5Ljg2OFoiLCJlbWFpbCI6Inlhc2h1LnNhaHVAYXN0ZXJpYS5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2luc2lnaHQxLmF1dGgwLmNvbS8iLCJhdWQiOiI1SWZ4OEcxZkNJMEh1eU1FMTFoY0t3ejdLeVpOckJsVSIsImlhdCI6MTY5NDQ4NzE5NSwiZXhwIjoxNjk0NTIzMTk1LCJzdWIiOiJhdXRoMHw2NDc4MjgwYTU3MTBjYmRhMzRmMjVlM2MiLCJzaWQiOiJfd29GdFNsVG53NGxtRlRmYXp1VGo5NzI5WUYzTTlPVyJ9.S5IPEOu2-C7zFUqGLHPoL5Scn10jPZexJ9HNPWfd4nLgJNmV_J8HTiXRwIJViT9VY58kmDVpCPr1EDugOZpQu4lCtWTSNSsTNU2dhIT2-NFE0bSM2DpqWH_AmnV7OJ0xW6lsRKgkyfE111h83NyaZUd5xtPr8Iba4cH5ZT1zsWnmGBjTo1kdx2uIx6viJa0g_aIIznAjAAnrWEyS1ABdNdzxlZBL-wqCDXhFsPSTlRGxuvR9d2am6_ATXuxgPlFqwk-QPET7_tsAydaahby5rL7tV_XiZEBIribqsBgL-k0Kb5QbBh4dB0LxJx415rWq4l8KlY7LhY2n2hdw7CTWig"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "https://skydeck-staging.asteria.co.in/ui/site-management/39fa3138-f921-4f57-9d8e-3a3af2561c3e/site/e28d6f07-8cdb-4b41-b306-c493e348b569/survey/35b8ad17-55d0-45a4-b15d-93b6956b6907/2dstitching"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6InNyaXZhdHNhLnMiLCJuYW1lIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzFjYWQyNWI4NmEzYzI4ZjA0Yzg5ZjEzZTAyMzA1YzEyP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGc3IucG5nIiwidXBkYXRlZF9hdCI6IjIwMjMtMDktMDRUMTE6MDM6MTMuOTQ0WiIsImVtYWlsIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vaW5zaWdodDEuYXV0aDAuY29tLyIsImF1ZCI6IjVJZng4RzFmQ0kwSHV5TUUxMWhjS3d6N0t5Wk5yQmxVIiwiaWF0IjoxNjk0MTcxMzE1LCJleHAiOjE2OTQyMDczMTUsInN1YiI6ImF1dGgwfDYzNjhiY2Q1NzlhYzFkMzhmYzM2OGVmOCIsInNpZCI6ImtUWWtHSXZvNGVfUXJLdWRzZEZxZ1h3eXllNC15VDFyIn0.iXM39uz3ToqMAT75jrjRscbC2iOM6pd-oFRmgcp7ou9Dsv5SyyviEkwa-5CkDSS_2RXgRnH5awMY8413BoWb6Kb1cTd_LEL0OzOBEi7J6f_9qcJUCuiXhYD_ooiBC48Bl1tV5absAoxP4SfklyE8wfI73njGlzFYZLsMj1borwTts9-duBTyiX790YmQ1P2pZB-Rj4n7H1P2nIm3-vZhtMjnedIAqeCIakLncx2ZrkFgejmBL_M6ds1cbH8MpTYA19mcyBpltweGoKrYuOIOMiys8KHDG27WYXbOBfc-y24bEc7zu4yoKcy9oIVEdxiwAXOJWO8tujHpGyFqlTjSTw",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_08BW5CB1LR=GS1.1.1678353821.1.1.1678353862.0.0.0; _ga=GA1.3.110356187.1678353821; _clck=n2udn3|1|f9r|0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "x-claim-sub",
+						"value": "{{super_user_xclaim_sub}}",
+						"type": "text"
+					},
+					{
+						"key": "x-claim-email",
+						"value": "{{super_user_xclaim_email}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"vikrnat\",\n    \"email\": \"vikrant1@example.com\",\n    \"mobile\": 76512348412\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/show_records?Simplify=true",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"show_records"
+					],
+					"query": [
+						{
+							"key": "Simplify",
+							"value": "true"
+						}
+					]
+				},
+				"description": "gis-ortho image list"
+			},
+			"response": []
+		},
+		{
+			"name": "Show_expense",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6Inlhc2h1LnNhaHUiLCJuYW1lIjoiWWFzaHUgU2FodSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82ZDFmNGMxMDhhZTI3ZDI2MTRmNDU1N2I2YmU1ZDc2OD9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRnlzLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTEwVDEzOjQ1OjU5Ljg2OFoiLCJlbWFpbCI6Inlhc2h1LnNhaHVAYXN0ZXJpYS5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2luc2lnaHQxLmF1dGgwLmNvbS8iLCJhdWQiOiI1SWZ4OEcxZkNJMEh1eU1FMTFoY0t3ejdLeVpOckJsVSIsImlhdCI6MTY5NDQ4NzE5NSwiZXhwIjoxNjk0NTIzMTk1LCJzdWIiOiJhdXRoMHw2NDc4MjgwYTU3MTBjYmRhMzRmMjVlM2MiLCJzaWQiOiJfd29GdFNsVG53NGxtRlRmYXp1VGo5NzI5WUYzTTlPVyJ9.S5IPEOu2-C7zFUqGLHPoL5Scn10jPZexJ9HNPWfd4nLgJNmV_J8HTiXRwIJViT9VY58kmDVpCPr1EDugOZpQu4lCtWTSNSsTNU2dhIT2-NFE0bSM2DpqWH_AmnV7OJ0xW6lsRKgkyfE111h83NyaZUd5xtPr8Iba4cH5ZT1zsWnmGBjTo1kdx2uIx6viJa0g_aIIznAjAAnrWEyS1ABdNdzxlZBL-wqCDXhFsPSTlRGxuvR9d2am6_ATXuxgPlFqwk-QPET7_tsAydaahby5rL7tV_XiZEBIribqsBgL-k0Kb5QbBh4dB0LxJx415rWq4l8KlY7LhY2n2hdw7CTWig"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "https://skydeck-staging.asteria.co.in/ui/site-management/39fa3138-f921-4f57-9d8e-3a3af2561c3e/site/e28d6f07-8cdb-4b41-b306-c493e348b569/survey/35b8ad17-55d0-45a4-b15d-93b6956b6907/2dstitching"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qTkZRVUkyT1RRM01qTXpOa1l4TmpCQ04wSTVNa0kxUmpFNVFVSkVOelkzTnpnNFJqTXpRZyJ9.eyJuaWNrbmFtZSI6InNyaXZhdHNhLnMiLCJuYW1lIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzFjYWQyNWI4NmEzYzI4ZjA0Yzg5ZjEzZTAyMzA1YzEyP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGc3IucG5nIiwidXBkYXRlZF9hdCI6IjIwMjMtMDktMDRUMTE6MDM6MTMuOTQ0WiIsImVtYWlsIjoic3JpdmF0c2Euc0Bhc3RlcmlhLmNvLmluIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vaW5zaWdodDEuYXV0aDAuY29tLyIsImF1ZCI6IjVJZng4RzFmQ0kwSHV5TUUxMWhjS3d6N0t5Wk5yQmxVIiwiaWF0IjoxNjk0MTcxMzE1LCJleHAiOjE2OTQyMDczMTUsInN1YiI6ImF1dGgwfDYzNjhiY2Q1NzlhYzFkMzhmYzM2OGVmOCIsInNpZCI6ImtUWWtHSXZvNGVfUXJLdWRzZEZxZ1h3eXllNC15VDFyIn0.iXM39uz3ToqMAT75jrjRscbC2iOM6pd-oFRmgcp7ou9Dsv5SyyviEkwa-5CkDSS_2RXgRnH5awMY8413BoWb6Kb1cTd_LEL0OzOBEi7J6f_9qcJUCuiXhYD_ooiBC48Bl1tV5absAoxP4SfklyE8wfI73njGlzFYZLsMj1borwTts9-duBTyiX790YmQ1P2pZB-Rj4n7H1P2nIm3-vZhtMjnedIAqeCIakLncx2ZrkFgejmBL_M6ds1cbH8MpTYA19mcyBpltweGoKrYuOIOMiys8KHDG27WYXbOBfc-y24bEc7zu4yoKcy9oIVEdxiwAXOJWO8tujHpGyFqlTjSTw",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_08BW5CB1LR=GS1.1.1678353821.1.1.1678353862.0.0.0; _ga=GA1.3.110356187.1678353821; _clck=n2udn3|1|f9r|0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "x-claim-sub",
+						"value": "{{super_user_xclaim_sub}}",
+						"type": "text"
+					},
+					{
+						"key": "x-claim-email",
+						"value": "{{super_user_xclaim_email}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"vikrnat\",\n    \"email\": \"vikrant1@example.com\",\n    \"mobile\": 76512348412\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/show_records?Simplify=true",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"show_records"
+					],
+					"query": [
+						{
+							"key": "Simplify",
+							"value": "true"
+						}
+					]
+				},
+				"description": "gis-ortho image list"
+			},
+			"response": []
+		}
+	]
+}
